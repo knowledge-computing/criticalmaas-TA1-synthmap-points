@@ -147,7 +147,7 @@ if __name__ == "__main__":
     # basic parameters
     parser = argparse.ArgumentParser(description='symbol')
     parser.add_argument('--root1', type=str, default="./ta1_feature_extraction/")
-    parser.add_argument('--root2', type=str, default="./symbol_data/cropped_point_symbols/")    
+    parser.add_argument('--root2', type=str, default="./symbol_data//")    
     parser.add_argument('--target_symbol', type=str, required=True)
     parser.add_argument('--max_rotate', type=int, default=0)
     parser.add_argument('--use_target_symbol_tifs', action='store_false')
@@ -179,10 +179,10 @@ if __name__ == "__main__":
     # define path
     map_tif_dir = os.path.join(root1, 'training')
     annotation_tif_dir = os.path.join(root1, 'training_json_gts')
-    target_symbol_image_dir = os.path.join(root2, f'draft/{target_symbol}')
+    target_symbol_image_dir = os.path.join(root2, f'cropped_point_symbols/draft/{target_symbol}')
+    number_img_dir = os.path.join(root2, 'numbers/')
     spotting_dir = './mapkurator_result/ta1_competition_train'
     map_mask_dir = os.path.join(root1, 'training_masks')
-    number_img_dir = './symbol_data/numbers/'
 
     output_dir = os.path.join(root1, f'point_synthetic_maps/{target_symbol}')
     output_json_file = os.path.join(output_dir, 'train_poly.json')
