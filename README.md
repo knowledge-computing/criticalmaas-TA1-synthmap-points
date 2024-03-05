@@ -17,8 +17,8 @@ Currently, we support 11 point symbols:
 ### Running Command
 ```
 python create_synthetic_maps_main.py
---root1 [path of the map tifs]
---root2 [path of the symbol images]
+--root1 [path to the map tifs]
+--root2 [path to the symbol images]
 --target_symbol [target symbol name]
 --max_rotate [maximum rotation angle]
 --use_target_symbol_tifs [default: True]
