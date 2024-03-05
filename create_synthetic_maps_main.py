@@ -147,7 +147,7 @@ if __name__ == "__main__":
     # basic parameters
     parser = argparse.ArgumentParser(description='symbol')
     parser.add_argument('--root1', type=str, default="./ta1_feature_extraction/")
-    parser.add_argument('--root2', type=str, default="./symbol_data//")    
+    parser.add_argument('--root2', type=str, default="./symbol_data/")    
     parser.add_argument('--target_symbol', type=str, required=True)
     parser.add_argument('--max_rotate', type=int, default=0)
     parser.add_argument('--use_target_symbol_tifs', action='store_false')
